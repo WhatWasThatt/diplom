@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  price: 9.99
+  produced: MyString
+  brand: one
+  category: one
+  country: one
+  produced: MyString
+  power: 1
+  pfc: MyString
+  efficiency: 1
+
+two:
+  name: MyString
+  description: MyString
+  price: 9.99
+  produced: MyString
+  brand: two
+  category: two
+  country: two
+  produced: MyString
+  power: 1
+  pfc: MyString
+  efficiency: 1

@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @notebook.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @notebook.description %>
+</p>
+
+<p>
+  <strong>Diagonal:</strong>
+  <%= @notebook.diagonal %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @notebook.brand_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @notebook.category_id %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @notebook.country_id %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @notebook.color_id %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @notebook.price %>
+</p>
+
+<p>
+  <strong>Produced:</strong>
+  <%= @notebook.produced %>
+</p>
+
+<p>
+  <strong>Os:</strong>
+  <%= @notebook.os_id %>
+</p>
+
+<p>
+  <strong>Resolution:</strong>
+  <%= @notebook.resolution %>
+</p>
+
+<%= link_to 'Edit', edit_notebook_path(@notebook) %> |
+<%= link_to 'Back', notebooks_path %>

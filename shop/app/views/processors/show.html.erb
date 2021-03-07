@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @processor.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @processor.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @processor.price %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @processor.category %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @processor.country %>
+</p>
+
+<p>
+  <strong>Produced:</strong>
+  <%= @processor.produced %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @processor.brand %>
+</p>
+
+<p>
+  <strong>Crystalcodename:</strong>
+  <%= @processor.crystalcodename %>
+</p>
+
+<p>
+  <strong>Socket:</strong>
+  <%= @processor.socket %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @processor.model %>
+</p>
+
+<%= link_to 'Edit', edit_processor_path(@processor) %> |
+<%= link_to 'Back', processors_path %>

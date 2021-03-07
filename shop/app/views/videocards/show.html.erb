@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @videocard.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @videocard.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @videocard.price %>
+</p>
+
+<p>
+  <strong>Produced:</strong>
+  <%= @videocard.produced %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @videocard.brand_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @videocard.category_id %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @videocard.country_id %>
+</p>
+
+<p>
+  <strong>Processor:</strong>
+  <%= @videocard.processor %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @videocard.type %>
+</p>
+
+<p>
+  <strong>Memory:</strong>
+  <%= @videocard.memory %>
+</p>
+
+<%= link_to 'Edit', edit_videocard_path(@videocard) %> |
+<%= link_to 'Back', videocards_path %>

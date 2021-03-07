@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @harddisk.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @harddisk.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @harddisk.price %>
+</p>
+
+<p>
+  <strong>Produced:</strong>
+  <%= @harddisk.produced %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @harddisk.brand_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @harddisk.category_id %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @harddisk.country_id %>
+</p>
+
+<p>
+  <strong>Volume:</strong>
+  <%= @harddisk.volume %>
+</p>
+
+<p>
+  <strong>Interface:</strong>
+  <%= @harddisk.interface %>
+</p>
+
+<p>
+  <strong>Factor:</strong>
+  <%= @harddisk.factor %>
+</p>
+
+<%= link_to 'Edit', edit_harddisk_path(@harddisk) %> |
+<%= link_to 'Back', harddisks_path %>

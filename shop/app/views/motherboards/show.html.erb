@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @motherboard.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @motherboard.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @motherboard.price %>
+</p>
+
+<p>
+  <strong>Produced:</strong>
+  <%= @motherboard.produced %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @motherboard.brand_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @motherboard.category_id %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @motherboard.country_id %>
+</p>
+
+<p>
+  <strong>Factor:</strong>
+  <%= @motherboard.factor %>
+</p>
+
+<p>
+  <strong>Soket:</strong>
+  <%= @motherboard.soket %>
+</p>
+
+<p>
+  <strong>Chipset:</strong>
+  <%= @motherboard.chipset %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @motherboard.type %>
+</p>
+
+<%= link_to 'Edit', edit_motherboard_path(@motherboard) %> |
+<%= link_to 'Back', motherboards_path %>

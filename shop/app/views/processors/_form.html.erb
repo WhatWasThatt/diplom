@@ -1,0 +1,67 @@
+<%= form_with(model: processor) do |form| %>
+  <% if processor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(processor.errors.count, "error") %> prohibited this processor from being saved:</h2>
+
+      <ul>
+        <% processor.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category %>
+    <%= form.text_field :category %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :produced %>
+    <%= form.text_field :produced %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand %>
+    <%= form.text_field :brand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :crystalcodename %>
+    <%= form.text_field :crystalcodename %>
+  </div>
+
+  <div class="field">
+    <%= form.label :socket %>
+    <%= form.text_field :socket %>
+  </div>
+
+  <div class="field">
+    <%= form.label :model %>
+    <%= form.text_field :model %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

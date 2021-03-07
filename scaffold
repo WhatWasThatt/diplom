@@ -1,0 +1,1 @@
+rails scaffold monitors diagonal:decimal categories:referencies resolution:string color:string 

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ssds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Produced</th>
+      <th>Brand</th>
+      <th>Category</th>
+      <th>Country</th>
+      <th>Volume</th>
+      <th>Type</th>
+      <th>Factor</th>
+      <th>Interface</th>
+      <th>Controller</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ssds.each do |ssd| %>
+      <tr>
+        <td><%= ssd.name %></td>
+        <td><%= ssd.description %></td>
+        <td><%= ssd.price %></td>
+        <td><%= ssd.produced %></td>
+        <td><%= ssd.brand_id %></td>
+        <td><%= ssd.category_id %></td>
+        <td><%= ssd.country_id %></td>
+        <td><%= ssd.volume %></td>
+        <td><%= ssd.type %></td>
+        <td><%= ssd.factor %></td>
+        <td><%= ssd.interface %></td>
+        <td><%= ssd.controller %></td>
+        <td><%= link_to 'Show', ssd %></td>
+        <td><%= link_to 'Edit', edit_ssd_path(ssd) %></td>
+        <td><%= link_to 'Destroy', ssd, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ssd', new_ssd_path %>

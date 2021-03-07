@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @monoblock.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @monoblock.description %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @monoblock.brand_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @monoblock.category_id %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @monoblock.country_id %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @monoblock.color_id %>
+</p>
+
+<p>
+  <strong>Os:</strong>
+  <%= @monoblock.os_id %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @monoblock.price %>
+</p>
+
+<p>
+  <strong>Diagonal:</strong>
+  <%= @monoblock.diagonal %>
+</p>
+
+<p>
+  <strong>Produced:</strong>
+  <%= @monoblock.produced %>
+</p>
+
+<p>
+  <strong>Resolution:</strong>
+  <%= @monoblock.resolution %>
+</p>
+
+<%= link_to 'Edit', edit_monoblock_path(@monoblock) %> |
+<%= link_to 'Back', monoblocks_path %>

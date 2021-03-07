@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  price: 9.99
+  produced: MyString
+  brand: one
+  category: one
+  country: one
+  volume: MyString
+  type: 
+  factor: MyString
+  interface: MyString
+  controller: MyString
+
+two:
+  name: MyString
+  description: MyString
+  price: 9.99
+  produced: MyString
+  brand: two
+  category: two
+  country: two
+  volume: MyString
+  type: 
+  factor: MyString
+  interface: MyString
+  controller: MyString

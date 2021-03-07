@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Monoblocks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Brand</th>
+      <th>Category</th>
+      <th>Country</th>
+      <th>Color</th>
+      <th>Os</th>
+      <th>Price</th>
+      <th>Diagonal</th>
+      <th>Produced</th>
+      <th>Resolution</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @monoblocks.each do |monoblock| %>
+      <tr>
+        <td><%= monoblock.name %></td>
+        <td><%= monoblock.description %></td>
+        <td><%= monoblock.brand_id %></td>
+        <td><%= monoblock.category_id %></td>
+        <td><%= monoblock.country_id %></td>
+        <td><%= monoblock.color_id %></td>
+        <td><%= monoblock.os_id %></td>
+        <td><%= monoblock.price %></td>
+        <td><%= monoblock.diagonal %></td>
+        <td><%= monoblock.produced %></td>
+        <td><%= monoblock.resolution %></td>
+        <td><%= link_to 'Show', monoblock %></td>
+        <td><%= link_to 'Edit', edit_monoblock_path(monoblock) %></td>
+        <td><%= link_to 'Destroy', monoblock, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Monoblock', new_monoblock_path %>

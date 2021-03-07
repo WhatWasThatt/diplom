@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Monitorsses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Diagonal</th>
+      <th>Category</th>
+      <th>Resolution</th>
+      <th>Color</th>
+      <th>Brand</th>
+      <th>Produced</th>
+      <th>Resolution</th>
+      <th>Country</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @monitorsses.each do |monitorss| %>
+      <tr>
+        <td><%= monitorss.name %></td>
+        <td><%= monitorss.description %></td>
+        <td><%= monitorss.price %></td>
+        <td><%= monitorss.diagonal %></td>
+        <td><%= monitorss.category_id %></td>
+        <td><%= monitorss.resolution %></td>
+        <td><%= monitorss.color_id %></td>
+        <td><%= monitorss.brand_id %></td>
+        <td><%= monitorss.produced %></td>
+        <td><%= monitorss.resolution %></td>
+        <td><%= monitorss.country_id %></td>
+        <td><%= link_to 'Show', monitorss %></td>
+        <td><%= link_to 'Edit', edit_monitorss_path(monitorss) %></td>
+        <td><%= link_to 'Destroy', monitorss, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Monitorss', new_monitorss_path %>

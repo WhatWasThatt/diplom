@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Notebooks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Diagonal</th>
+      <th>Brand</th>
+      <th>Category</th>
+      <th>Country</th>
+      <th>Color</th>
+      <th>Price</th>
+      <th>Produced</th>
+      <th>Os</th>
+      <th>Resolution</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @notebooks.each do |notebook| %>
+      <tr>
+        <td><%= notebook.name %></td>
+        <td><%= notebook.description %></td>
+        <td><%= notebook.diagonal %></td>
+        <td><%= notebook.brand_id %></td>
+        <td><%= notebook.category_id %></td>
+        <td><%= notebook.country_id %></td>
+        <td><%= notebook.color_id %></td>
+        <td><%= notebook.price %></td>
+        <td><%= notebook.produced %></td>
+        <td><%= notebook.os_id %></td>
+        <td><%= notebook.resolution %></td>
+        <td><%= link_to 'Show', notebook %></td>
+        <td><%= link_to 'Edit', edit_notebook_path(notebook) %></td>
+        <td><%= link_to 'Destroy', notebook, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Notebook', new_notebook_path %>

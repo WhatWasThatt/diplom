@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @computer.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @computer.description %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @computer.brand_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @computer.category_id %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @computer.country_id %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @computer.color_id %>
+</p>
+
+<p>
+  <strong>Os:</strong>
+  <%= @computer.os_id %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @computer.price %>
+</p>
+
+<p>
+  <strong>Produced:</strong>
+  <%= @computer.produced %>
+</p>
+
+<p>
+  <strong>Width:</strong>
+  <%= @computer.width %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @computer.height %>
+</p>
+
+<%= link_to 'Edit', edit_computer_path(@computer) %> |
+<%= link_to 'Back', computers_path %>

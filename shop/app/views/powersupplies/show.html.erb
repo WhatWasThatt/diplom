@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @powersupply.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @powersupply.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @powersupply.price %>
+</p>
+
+<p>
+  <strong>Produced:</strong>
+  <%= @powersupply.produced %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @powersupply.brand_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @powersupply.category_id %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @powersupply.country_id %>
+</p>
+
+<p>
+  <strong>Produced:</strong>
+  <%= @powersupply.produced %>
+</p>
+
+<p>
+  <strong>Power:</strong>
+  <%= @powersupply.power %>
+</p>
+
+<p>
+  <strong>Pfc:</strong>
+  <%= @powersupply.pfc %>
+</p>
+
+<p>
+  <strong>Efficiency:</strong>
+  <%= @powersupply.efficiency %>
+</p>
+
+<%= link_to 'Edit', edit_powersupply_path(@powersupply) %> |
+<%= link_to 'Back', powersupplies_path %>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shop</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
+    <div class="navbar justify-content-center">
+  <div class="nav-item">
+    <%= link_to 'Brands', root_path, class: 'nav-link' %>
+  </div>
+  <% if current_user   %>
+    <div class="nav-item">
+      <%= link_to 'Log out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+    </div>
+  <% else %>
+    <div class="nav-item">
+      <%= link_to 'Log in', user_session_path, class: 'nav-link' %>
+    </div>
+  <% end %>
+</div>
+<%= yield %>
+  </body>
+</html>
